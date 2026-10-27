@@ -1,0 +1,127 @@
+name: gds
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  gds:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install KLayout
+        run: |
+          wget https://github.com/TinyTapeout/klayout/releases/download/v0.29.12/klayout_0.29.12-1_amd64.deb
+          sudo apt-get update && sudo apt-get install -y ./klayout_0.29.12-1_amd64.deb
+
+      - name: Create the tt_submission files
+        run: |
+          TOP=$(yq '.project.top_module' info.yaml)
+          mkdir -p tt_submission
+          jq -n \
+            --arg app "custom_gds action" \
+            --arg repo "${{ github.server_url }}/${{ github.repository }}" \
+            --arg commit "${{ github.sha }}" \
+            --arg workflow_url "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            '{app: $app, repo: $repo, commit: $commit, workflow_url: $workflow_url}' \
+            > tt_submission/commit_id.json
+          jq -n --arg pdk sky130A '{PDK: $pdk}' > tt_submission/pdk.json
+          gunzip -c gds/$TOP.gds.gz > tt_submission/$TOP.gds
+          strm2oas tt_submission/$TOP.gds tt_submission/$TOP.oas
+          cp lef/$TOP.lef tt_submission/$TOP.lef
+          cp verilog/$TOP.v tt_submission/$TOP.v
+
+      - name: Publish tt_submission artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: tt_submission
+          path: |
+            info.yaml
+            LICENSE
+            docs/*
+            tt_submission/*
+
+  precheck:
+    needs: gds
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Free disk and add swap
+        run: |
+          free -m
+          df -h /
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          df -h /
+          sudo fallocate -l 20G /precheck.swap
+          sudo chmod 600 /precheck.swap
+          sudo mkswap /precheck.swap
+          sudo swapon /precheck.swap
+          free -m
+          df -h /
+
+      - name: Checkout tt-support-tools repo
+        uses: actions/checkout@v6
+        with:
+          repository: TinyTapeout/tt-support-tools
+          path: tt
+          ref: main
+
+      - name: Download GDS artifact
+        uses: actions/download-artifact@v7
+        with:
+          name: tt_submission
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        working-directory: tt/precheck
+        run: pip install -r requirements.txt
+
+      - name: Install sky130A PDK
+        uses: TinyTapeout/ciel-action@v1
+        with:
+          pdk_name: sky130A
+          pdk_version: 0536d02d875c8f67dd7cca3902ac457e62f20005
+          pdk_root: /home/runner/pdk
+
+      - name: Install Nix
+        uses: rikhuijzer/cache-install@c46c673b14b0780c6749d7a45f26ebc07c8c7388
+        with:
+          key: nix-${{ hashFiles('tt/precheck/default.nix') }}
+          nix_file: 'tt/precheck/default.nix'
+
+      - name: Build Nix packages
+        working-directory: tt/precheck
+        run: nix-build
+
+      - name: Run precheck with a resource monitor
+        working-directory: tt/precheck
+        env:
+          PDK: sky130A
+          PDK_ROOT: /home/runner/pdk
+        run: |
+          (while sleep 15; do
+            echo "MON $(date -u +%T)" \
+              "$(free -m | awk '/Mem:/{printf "mem_used=%s avail=%s ", $3, $7} /Swap:/{printf "swap_used=%s", $3}')" \
+              "$(df -m / | awk 'NR==2{print "disk_avail_mb=" $4}')" \
+              "load=$(cut -d' ' -f1-3 /proc/loadavg)" \
+              "top=$(ps -eo rss=,pcpu=,comm= --sort=-rss | head -1 | tr -s ' ')"
+          done) &
+          nix-shell --run "python precheck.py --gds ${{ github.workspace }}/tt_submission/*.gds* --tech sky130A"
+
+      - name: Capture test results
+        working-directory: tt/precheck
+        if: always()
+        run: cat reports/results.md >> $GITHUB_STEP_SUMMARY
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: precheck_reports
+          path: tt/precheck/reports
