@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "rtl_sha256": "6ed3d5cc2ddcb5ed9a8a2eb38cfaab8fe0215d550ef2154543a6333cddada551",
+  "rows": 4,
+  "pipeline_drain_clocks": 0,
+  "row_state_comparisons": 32768,
+  "scope": "Every on-chip accumulator checked against the resident coefficient matrix. One complete row and three aligned partial rows; all four lanes have assigned work during the shared slice window. Host complements and live model integration are not checked here.",
+  "input_bytes": 1024,
+  "compute_clocks": 8192,
+  "busy_freeze_clocks": 192,
+  "ready_stall_clocks": 32,
+  "additional_paused_row_checks": 896,
+  "resident_feature_counts": [
+    128,
+    128,
+    1024,
+    128
+  ],
+  "four_lane_feature_steps": 128,
+  "test_script_sha256": "52b81e64c6a7db47173804e31df7b3cc498baec50355928c5474472363149d78"
+}

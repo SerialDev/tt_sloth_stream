@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "seed": 170264,
+  "vectors": 259,
+  "exact_completed_sums": 1036,
+  "chip_owned_input_independence_checks": 259,
+  "complete_row_host_input_independence_checks": 259,
+  "chip_result_sensitivity_checks": 4,
+  "rejected_invalid_inputs": 20,
+  "host_coefficients": 2688,
+  "metadata_sha256": "c054a2e5963e015bac8f4ea3ffba29018db68a0c37b9f5dfaddc72602a3017fc",
+  "projection_sha256": "68f9f9612310857429c65c953ed67746852cbdbb4950b2e13b179eef68bbf47a",
+  "test_sha256": "424665ba5a8156a5a6ba5d5e2ed3983c3e494413ebf1a049d038f68da72c2f0b"
+}

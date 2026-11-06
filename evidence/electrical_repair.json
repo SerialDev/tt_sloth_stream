@@ -1,0 +1,103 @@
+{
+  "source_run": "physical_2tile_eco1",
+  "repair_mode": "drive",
+  "placement_strategy": "empty_sites",
+  "source_checkpoint_sha256": "3d4c6438f55cd2daa162e42dcdb16fcd316d9eb2deb673d944759c3c2bceffaa",
+  "source_odb_sha256": "99782016cb05b5544f3857f84d6eaacf5cf40753bc608bbc331698290aa0c236",
+  "source_manifest_sha256": "e684ca89de8f668f0b03f673f9c4bbe426432c616dac93640777d3eba4f60cb1",
+  "extracted": {
+    "target_nets": [
+      "net120",
+      "net68",
+      "rom/_0000_",
+      "rom/_0056_",
+      "rom/_0414_",
+      "rom/_0466_"
+    ],
+    "guard": 1.15,
+    "spef": "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/10-openroad-rcx/max/tt_um_serialdev_sloth_stream.max.spef",
+    "spef_sha256": "09675dbe010def2394bf7a1d1c3fa91a3ac00dd978ce584e8eff4f139105f839",
+    "sta_reports_sha256": {
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/max_ff_n40C_1v95/checks.rpt": "f1ed488ed27efc8a54cb4e9e291e737fd7ab945c3230c9a38892c5249c12ede3",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/max_ss_100C_1v60/checks.rpt": "565952649e4202426a1389d6f6669b7538ef95a6e2a0ad126fec68cf543d9fc4",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/max_tt_025C_1v80/checks.rpt": "832019558488267dffb511ae9d7bc03dd5425f1dd1ea8cb0bd5daca66c5f08f5",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/min_ff_n40C_1v95/checks.rpt": "9bc50c46d7cca058f637d4564fbf793f09705ffccd041a103d1fd9ef86c8bd3e",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/min_ss_100C_1v60/checks.rpt": "4c217a5653bf8c8ec06280f463ad147daae46c7d23e78d94db990d05bfaedbe6",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/min_tt_025C_1v80/checks.rpt": "6de21638a1fc5dd986c1f6f0e2e9c55d6bfec2bc43386601eaf8a91df6676ccc",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/nom_ff_n40C_1v95/checks.rpt": "2b9c4137c55c406e3686e1d622fc8599d16cb484744e8866ff6cf215163f791d",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/nom_ss_100C_1v60/checks.rpt": "871403c67955aa332eff6b47e93d66b21b92179b7190fd9aa2c9bca56b188804",
+      "/work/projects/tt_sloth_architecture/candidates/hybrid_264_s128_bitplane/build/physical_2tile_eco1/11-openroad-stapostpnr/nom_tt_025C_1v80/checks.rpt": "fef25bf0734bff08e97e3b4baf11c11768fa264913903989a82c8eaf95274211"
+    },
+    "netlist_sha256": "3e7ef80d376066b06bd7d4835235b79a1569905bb4b5af86212656c48a16f67c",
+    "calibration": [],
+    "inserted_instances": [
+      "eco_rpt_buf_114",
+      "eco_rpt_buf_115",
+      "eco_rpt_buf_116",
+      "eco_rpt_buf_117",
+      "eco_rpt_buf_118",
+      "eco_rpt_buf_119"
+    ],
+    "resized_instances": [],
+    "shifted_neighbours": [],
+    "reverted_far_resizes": [],
+    "pinned_far_neighbours": []
+  },
+  "outcome": {
+    "repeaters": [
+      "eco_rpt_buf_114",
+      "eco_rpt_buf_115",
+      "eco_rpt_buf_116",
+      "eco_rpt_buf_117",
+      "eco_rpt_buf_118",
+      "eco_rpt_buf_119"
+    ],
+    "placed": [
+      "eco_rpt_buf_114",
+      "eco_rpt_buf_115",
+      "eco_rpt_buf_116",
+      "eco_rpt_buf_117",
+      "eco_rpt_buf_118",
+      "eco_rpt_buf_119"
+    ],
+    "modified": [],
+    "shifted": [],
+    "reverted": [],
+    "pinned": [],
+    "calibration": [],
+    "route_violations": [
+      63,
+      23,
+      17,
+      0
+    ],
+    "antenna_violations": 0,
+    "moved_existing": 0,
+    "complete": true
+  },
+  "changed_route_nets": [
+    "acc\\[2\\]\\[0\\]",
+    "clk",
+    "clknet_0_clk",
+    "eco_rpt_net_51",
+    "eco_rpt_net_77",
+    "net120",
+    "net124",
+    "net137",
+    "net68",
+    "rom/_0000_",
+    "rom/_0056_",
+    "rom/_0111_",
+    "rom/_0304_",
+    "rom/_0414_",
+    "rom/_0466_",
+    "rom/_0497_"
+  ],
+  "preexisting_nets": 1950,
+  "script_sha256": "7375266390c7e8101e16e47587eebc0adbbdf86e0f6045a79066ce762cda3421",
+  "backend_tcl_sha256": "36f0eb98479eda858e2b6cbd14b07ee718a1440a3e85bb2ad16c4f96dce64238",
+  "backend_python_sha256": "fab77ec5fe14ab429ba292e0162a1351dfe800990e96a08cb25d123d72f4be39",
+  "signoff_sdc_sha256": "34c8f331c366db51a78ed8a0d2a7bbac3b6c1cfe0277a04c6aca9ba4948e7f78",
+  "same_rtl_and_constraints": true,
+  "final_reextraction_required": true
+}

@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "rtl_sha256": "6ed3d5cc2ddcb5ed9a8a2eb38cfaab8fe0215d550ef2154543a6333cddada551",
+  "metadata_sha256": "c054a2e5963e015bac8f4ea3ffba29018db68a0c37b9f5dfaddc72602a3017fc",
+  "host_source_sha256": {
+    "board.py": "edd17d75100acd65c8f3c64c5fcba6ea0f84195e4f2ea2bee94b5a868498fbdb",
+    "client.py": "07e2f613392c8b237530eba39cc5e5a85ee9a031c451482a3a8aea951bf3346c",
+    "demo.py": "b5d6ed7a8c835f6db5a7ef8f8ae27255a5c0da0b326ae43ea1631706434d8859",
+    "device.py": "85c459c8e1b24a48afeef268a7bf33181b7173a6fbc73758be2b0c41ca52ed16",
+    "live_demo.py": "2b34ed91baa125a6ef3c62c9eefdc3484894c87c096bab63eef2cf9a6ca13bc5",
+    "projection.py": "68f9f9612310857429c65c953ed67746852cbdbb4950b2e13b179eef68bbf47a",
+    "protocol.py": "8c40b6f40c37093b944ea7cba088570c13c2edf8838fd623cae3acae4f91c8dd",
+    "sim_board.py": "4cdb98cc18fbc6fe0694571aba5b9385a890a0c1dbafe906bd66685bc2d737f9",
+    "test_transport.py": "84f47e66f36485b94f3d44c8738c8b157aca06cbbd587b9e9313597550ce57db",
+    "transport_sim.py": "5d6886236ab63ee5fa415eb7164873e9136a36460948d32a3d2172f8638eabc2",
+    "wire.py": "7b618515ddaf0d203ed1b131d9158d9f35017eb660b1f230b989c764b0cc7e3f"
+  },
+  "evidence_sha256": {
+    "host_completion.json": "e1812becebde03e794e81c6ced203f5f0eee682b73b76b0ed09e9e7a73e45c9d",
+    "demo_sim.json": "008127baa4d951c2038a9123f2f8e0b7440019d8fa72cacd41a3429401955ea5",
+    "host_binding.json": "04bc3ec74736e5185ea04d7469856b00f140e347cf3a93b22b60506a1eb83283",
+    "live_sim.json": "9617566c06be0ab568d22c4c52d5a22cc1df071006b7d38e4c8df214ce09d086",
+    "live_freeform_eos_sim.json": "8ca8bae41fca2f156be4195a073d4204e5ae0514d2d50b0a0fa2d1c35496268e"
+  },
+  "board_transactions": 67,
+  "transport_rejection_cases": 10,
+  "live_offloads": 44,
+  "exact_baseline_scores_and_tokens": true,
+  "complete_chip_neuron_winners": 2,
+  "partially_offloaded_neuron_winners": 4,
+  "same_hidden_state_chip_removal_changed_global_winners": 6,
+  "host_complement_coefficients": 2688,
+  "complete_neuron_host_coefficients": 0,
+  "scope": "Simulated board service and RTL with actual local Qwen model; greedy unrestricted-vocabulary integration. CPU integer reference is validation-only. No physical-board execution or FP32-model equivalence claim."
+}

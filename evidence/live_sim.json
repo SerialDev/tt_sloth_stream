@@ -1,0 +1,140 @@
+{
+  "passed": true,
+  "mode": "simulated board",
+  "rtl_sha256": "6ed3d5cc2ddcb5ed9a8a2eb38cfaab8fe0215d550ef2154543a6333cddada551",
+  "script_sha256": "2b34ed91baa125a6ef3c62c9eefdc3484894c87c096bab63eef2cf9a6ca13bc5",
+  "resident_coefficients_independently_verified": true,
+  "offloaded_transactions": 9,
+  "complete_chip_neuron_winners": 1,
+  "partially_offloaded_neuron_winners": 2,
+  "chip_contribution_changes_winner_count": 3,
+  "host_complement_coefficients": 2688,
+  "generations": [
+    {
+      "prompt": "The capital of France is",
+      "tokens": [
+        11751,
+        13,
+        198
+      ],
+      "continuation": " Paris.\n",
+      "raw_continuation": " Paris.\n",
+      "stop_reason": "length"
+    },
+    {
+      "prompt": "7 + 5 =",
+      "tokens": [
+        220,
+        16,
+        17
+      ],
+      "continuation": " 12",
+      "raw_continuation": " 12",
+      "stop_reason": "length"
+    },
+    {
+      "prompt": "Once upon a time",
+      "tokens": [
+        11,
+        303,
+        264
+      ],
+      "continuation": ", in a",
+      "raw_continuation": ", in a",
+      "stop_reason": "length"
+    }
+  ],
+  "calls": [
+    {
+      "shard_token": 279,
+      "global_token": 11751,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 11751,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1376807360240,
+      "host_round_trip_ms": 10.269,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 198,
+      "global_token": 13,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 13,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1097060284968,
+      "host_round_trip_ms": 9.819458,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 198,
+      "global_token": 198,
+      "winner_path": "chip_slice_plus_host_complement",
+      "winner_without_chip_contribution": 561,
+      "chip_contribution_changes_winner": true,
+      "score_numerator": 1208644357632,
+      "host_round_trip_ms": 10.065167,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 220,
+      "winner_path": "chip_slice_plus_host_complement",
+      "winner_without_chip_contribution": 907,
+      "chip_contribution_changes_winner": true,
+      "score_numerator": 1834809357120,
+      "host_round_trip_ms": 10.285708,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 16,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 16,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1619329291840,
+      "host_round_trip_ms": 9.823958,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 198,
+      "global_token": 17,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 17,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1626770750874,
+      "host_round_trip_ms": 9.578375,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 11,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 11,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1129974688752,
+      "host_round_trip_ms": 9.36675,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 303,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 303,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1108136166176,
+      "host_round_trip_ms": 9.596834,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 264,
+      "winner_path": "complete_chip_neuron",
+      "winner_without_chip_contribution": 279,
+      "chip_contribution_changes_winner": true,
+      "score_numerator": 1684999614324,
+      "host_round_trip_ms": 9.916542,
+      "cycles": 8204
+    }
+  ],
+  "scope": "Greedy hybrid inference: resident rows use declared mixed weight precision and INT8 activations and exact local scale selection; nonresident rows use host FP32. Chip returns one complete dot product and three partial sums. Production host computation uses only the 2688 complement coefficients for the partial rows; the complete row has no host contribution. Completed sums match the original four-row integer reference. Winner provenance distinguishes complete-chip, mixed and nonresident-host rows. Chip-removal comparisons use the same hidden state, not an independently generated sequence. Not a float-model equivalence, full-head offload, sampling or acceleration claim. CPU validation overhead included in execution."
+}

@@ -1,0 +1,487 @@
+{
+  "passed": true,
+  "mode": "simulated byte stream + board service + public RTL pins",
+  "host_platform": "macOS-27.2-arm64-arm-64bit",
+  "python_version": "3.12.13",
+  "fixture_sha256": "d88c21eacaa9086659e350e7070f4709cd87ca4630b6a4932b0ea326dad0a99a",
+  "rtl_sha256": "6ed3d5cc2ddcb5ed9a8a2eb38cfaab8fe0215d550ef2154543a6333cddada551",
+  "source_sha256": {
+    "host/board.py": "edd17d75100acd65c8f3c64c5fcba6ea0f84195e4f2ea2bee94b5a868498fbdb",
+    "host/client.py": "07e2f613392c8b237530eba39cc5e5a85ee9a031c451482a3a8aea951bf3346c",
+    "host/demo.py": "b5d6ed7a8c835f6db5a7ef8f8ae27255a5c0da0b326ae43ea1631706434d8859",
+    "host/device.py": "85c459c8e1b24a48afeef268a7bf33181b7173a6fbc73758be2b0c41ca52ed16",
+    "host/live_demo.py": "2b34ed91baa125a6ef3c62c9eefdc3484894c87c096bab63eef2cf9a6ca13bc5",
+    "host/projection.py": "68f9f9612310857429c65c953ed67746852cbdbb4950b2e13b179eef68bbf47a",
+    "host/protocol.py": "8c40b6f40c37093b944ea7cba088570c13c2edf8838fd623cae3acae4f91c8dd",
+    "host/sim_board.py": "4cdb98cc18fbc6fe0694571aba5b9385a890a0c1dbafe906bd66685bc2d737f9",
+    "host/test_transport.py": "84f47e66f36485b94f3d44c8738c8b157aca06cbbd587b9e9313597550ce57db",
+    "host/transport_sim.py": "5d6886236ab63ee5fa415eb7164873e9136a36460948d32a3d2172f8638eabc2",
+    "host/wire.py": "7b618515ddaf0d203ed1b131d9158d9f35017eb660b1f230b989c764b0cc7e3f",
+    "test/bridge.cpp": "766e9f87e93de7070c46bed3cdcf404e83e6eed261722c4453d32fdced895ae9",
+    "evidence/weights.json": "c054a2e5963e015bac8f4ea3ffba29018db68a0c37b9f5dfaddc72602a3017fc"
+  },
+  "full_neuron_token_id": 264,
+  "host_complement_coefficients": 2688,
+  "result_semantics": "one_full_and_three_partial_dot_products",
+  "directed_winner_token_ids": [
+    198,
+    220,
+    264,
+    279
+  ],
+  "transactions": 67,
+  "fault_recovery": [
+    "CRC",
+    "short payload",
+    "unknown command",
+    "oversized line"
+  ],
+  "median_round_trip_ms": 9.34875,
+  "p95_round_trip_ms": 9.7563625,
+  "request_bytes": 2056,
+  "response_bytes": 32,
+  "records": [
+    {
+      "case": "zero/tie",
+      "token": 198,
+      "score_numerator": 0,
+      "round_trip_ms": 9.151792,
+      "cycles": 8204
+    },
+    {
+      "case": "negative extreme",
+      "token": 220,
+      "score_numerator": 641681960960,
+      "round_trip_ms": 9.438125,
+      "cycles": 8204
+    },
+    {
+      "case": "positive extreme",
+      "token": 198,
+      "score_numerator": 712545127866,
+      "round_trip_ms": 9.326667,
+      "cycles": 8204
+    },
+    {
+      "case": "random 0",
+      "token": 279,
+      "score_numerator": 308814429248,
+      "round_trip_ms": 9.517333,
+      "cycles": 8204
+    },
+    {
+      "case": "random 1",
+      "token": 198,
+      "score_numerator": 604309100514,
+      "round_trip_ms": 9.428958,
+      "cycles": 8204
+    },
+    {
+      "case": "random 2",
+      "token": 264,
+      "score_numerator": 981607818880,
+      "round_trip_ms": 9.406416,
+      "cycles": 8204
+    },
+    {
+      "case": "random 3",
+      "token": 220,
+      "score_numerator": 655871697120,
+      "round_trip_ms": 9.530959,
+      "cycles": 8204
+    },
+    {
+      "case": "random 4",
+      "token": 220,
+      "score_numerator": 1577864673600,
+      "round_trip_ms": 9.415667,
+      "cycles": 8204
+    },
+    {
+      "case": "random 5",
+      "token": 264,
+      "score_numerator": -334613445140,
+      "round_trip_ms": 9.590125,
+      "cycles": 8204
+    },
+    {
+      "case": "random 6",
+      "token": 220,
+      "score_numerator": 1848404313920,
+      "round_trip_ms": 9.683875,
+      "cycles": 8204
+    },
+    {
+      "case": "random 7",
+      "token": 279,
+      "score_numerator": 1086464781272,
+      "round_trip_ms": 9.432084,
+      "cycles": 8204
+    },
+    {
+      "case": "random 8",
+      "token": 220,
+      "score_numerator": 1352953107040,
+      "round_trip_ms": 9.7045,
+      "cycles": 8204
+    },
+    {
+      "case": "random 9",
+      "token": 220,
+      "score_numerator": 1550929665440,
+      "round_trip_ms": 9.762125,
+      "cycles": 8204
+    },
+    {
+      "case": "random 10",
+      "token": 220,
+      "score_numerator": 170276833920,
+      "round_trip_ms": 9.982042,
+      "cycles": 8204
+    },
+    {
+      "case": "random 11",
+      "token": 198,
+      "score_numerator": 1355369827770,
+      "round_trip_ms": 11.813625,
+      "cycles": 8204
+    },
+    {
+      "case": "random 12",
+      "token": 264,
+      "score_numerator": 761140053596,
+      "round_trip_ms": 9.926375,
+      "cycles": 8204
+    },
+    {
+      "case": "random 13",
+      "token": 264,
+      "score_numerator": 793785267756,
+      "round_trip_ms": 9.577125,
+      "cycles": 8204
+    },
+    {
+      "case": "random 14",
+      "token": 220,
+      "score_numerator": 2369176127840,
+      "round_trip_ms": 9.309833,
+      "cycles": 8204
+    },
+    {
+      "case": "random 15",
+      "token": 279,
+      "score_numerator": 206477469744,
+      "round_trip_ms": 9.1945,
+      "cycles": 8204
+    },
+    {
+      "case": "random 16",
+      "token": 279,
+      "score_numerator": 1421459785720,
+      "round_trip_ms": 9.207292,
+      "cycles": 8204
+    },
+    {
+      "case": "random 17",
+      "token": 198,
+      "score_numerator": 420598192320,
+      "round_trip_ms": 9.104,
+      "cycles": 8204
+    },
+    {
+      "case": "random 18",
+      "token": 220,
+      "score_numerator": 1422202418240,
+      "round_trip_ms": 9.271292,
+      "cycles": 8204
+    },
+    {
+      "case": "random 19",
+      "token": 220,
+      "score_numerator": 358651954080,
+      "round_trip_ms": 9.158916,
+      "cycles": 8204
+    },
+    {
+      "case": "random 20",
+      "token": 220,
+      "score_numerator": -72817987360,
+      "round_trip_ms": 9.120292,
+      "cycles": 8204
+    },
+    {
+      "case": "random 21",
+      "token": 220,
+      "score_numerator": 1357711341920,
+      "round_trip_ms": 9.224958,
+      "cycles": 8204
+    },
+    {
+      "case": "random 22",
+      "token": 264,
+      "score_numerator": 1190593474356,
+      "round_trip_ms": 9.420292,
+      "cycles": 8204
+    },
+    {
+      "case": "random 23",
+      "token": 198,
+      "score_numerator": 1108634582238,
+      "round_trip_ms": 9.281291,
+      "cycles": 8204
+    },
+    {
+      "case": "random 24",
+      "token": 220,
+      "score_numerator": 790121895520,
+      "round_trip_ms": 9.117459,
+      "cycles": 8204
+    },
+    {
+      "case": "random 25",
+      "token": 220,
+      "score_numerator": 1563420032000,
+      "round_trip_ms": 9.144583,
+      "cycles": 8204
+    },
+    {
+      "case": "random 26",
+      "token": 220,
+      "score_numerator": 1129570973120,
+      "round_trip_ms": 9.040208,
+      "cycles": 8204
+    },
+    {
+      "case": "random 27",
+      "token": 198,
+      "score_numerator": 2339708227800,
+      "round_trip_ms": 9.159375,
+      "cycles": 8204
+    },
+    {
+      "case": "random 28",
+      "token": 198,
+      "score_numerator": 496975476,
+      "round_trip_ms": 9.34875,
+      "cycles": 8204
+    },
+    {
+      "case": "random 29",
+      "token": 220,
+      "score_numerator": -86922755040,
+      "round_trip_ms": 9.384625,
+      "cycles": 8204
+    },
+    {
+      "case": "random 30",
+      "token": 264,
+      "score_numerator": 1556670151764,
+      "round_trip_ms": 9.389375,
+      "cycles": 8204
+    },
+    {
+      "case": "random 31",
+      "token": 220,
+      "score_numerator": 721637300640,
+      "round_trip_ms": 9.269667,
+      "cycles": 8204
+    },
+    {
+      "case": "directed resident 198",
+      "token": 198,
+      "score_numerator": 18686761794774,
+      "round_trip_ms": 9.170666,
+      "cycles": 8204
+    },
+    {
+      "case": "directed resident 220",
+      "token": 220,
+      "score_numerator": 15894033931840,
+      "round_trip_ms": 9.138958,
+      "cycles": 8204
+    },
+    {
+      "case": "directed resident 264",
+      "token": 264,
+      "score_numerator": 11058059733032,
+      "round_trip_ms": 9.327959,
+      "cycles": 8204
+    },
+    {
+      "case": "directed resident 279",
+      "token": 279,
+      "score_numerator": 15211263265536,
+      "round_trip_ms": 9.452333,
+      "cycles": 8204
+    },
+    {
+      "case": "The capital of France is",
+      "token": 279,
+      "score_numerator": 1376807360240,
+      "round_trip_ms": 9.458917,
+      "cycles": 8204
+    },
+    {
+      "case": "7 + 5 =",
+      "token": 220,
+      "score_numerator": 1834809357120,
+      "round_trip_ms": 9.367291,
+      "cycles": 8204
+    },
+    {
+      "case": "Once upon a time",
+      "token": 264,
+      "score_numerator": 1129974688752,
+      "round_trip_ms": 9.259792,
+      "cycles": 8204
+    },
+    {
+      "case": "The capital of Germany is",
+      "token": 279,
+      "score_numerator": 1254282268304,
+      "round_trip_ms": 9.194583,
+      "cycles": 8204
+    },
+    {
+      "case": "The capital of Italy is",
+      "token": 279,
+      "score_numerator": 1303705376376,
+      "round_trip_ms": 9.191583,
+      "cycles": 8204
+    },
+    {
+      "case": "The capital of Japan is",
+      "token": 279,
+      "score_numerator": 1072676345000,
+      "round_trip_ms": 9.2895,
+      "cycles": 8204
+    },
+    {
+      "case": "The capital of Portugal is",
+      "token": 279,
+      "score_numerator": 1350044994480,
+      "round_trip_ms": 9.202667,
+      "cycles": 8204
+    },
+    {
+      "case": "The capital of Spain is",
+      "token": 279,
+      "score_numerator": 1393621107424,
+      "round_trip_ms": 9.400583,
+      "cycles": 8204
+    },
+    {
+      "case": "The largest planet is",
+      "token": 279,
+      "score_numerator": 1528189263952,
+      "round_trip_ms": 9.700416,
+      "cycles": 8204
+    },
+    {
+      "case": "Water freezes at",
+      "token": 220,
+      "score_numerator": 2643709286720,
+      "round_trip_ms": 9.580834,
+      "cycles": 8204
+    },
+    {
+      "case": "The opposite of hot is",
+      "token": 198,
+      "score_numerator": 1214176479378,
+      "round_trip_ms": 9.467208,
+      "cycles": 8204
+    },
+    {
+      "case": "A triangle has",
+      "token": 264,
+      "score_numerator": 1508377748748,
+      "round_trip_ms": 9.454667,
+      "cycles": 8204
+    },
+    {
+      "case": "The first prime number is",
+      "token": 220,
+      "score_numerator": 1453640755840,
+      "round_trip_ms": 9.528375,
+      "cycles": 8204
+    },
+    {
+      "case": "To be or not to be",
+      "token": 264,
+      "score_numerator": 1119843415392,
+      "round_trip_ms": 9.270209,
+      "cycles": 8204
+    },
+    {
+      "case": "Roses are red, violets are",
+      "token": 198,
+      "score_numerator": 853411518708,
+      "round_trip_ms": 8.93025,
+      "cycles": 8204
+    },
+    {
+      "case": "The chemical symbol for gold is",
+      "token": 198,
+      "score_numerator": 1284550822440,
+      "round_trip_ms": 9.241458,
+      "cycles": 8204
+    },
+    {
+      "case": "In Python, a function is defined with",
+      "token": 279,
+      "score_numerator": 1628519046024,
+      "round_trip_ms": 9.323416,
+      "cycles": 8204
+    },
+    {
+      "case": "Translate hello into French:",
+      "token": 198,
+      "score_numerator": 925969938204,
+      "round_trip_ms": 9.415459,
+      "cycles": 8204
+    },
+    {
+      "case": "A cat says",
+      "token": 279,
+      "score_numerator": 839349240912,
+      "round_trip_ms": 9.364042,
+      "cycles": 8204
+    },
+    {
+      "case": "The sun rises in the",
+      "token": 198,
+      "score_numerator": 778067420886,
+      "round_trip_ms": 9.258708,
+      "cycles": 8204
+    },
+    {
+      "case": "Write a short greeting:",
+      "token": 198,
+      "score_numerator": 1025312720196,
+      "round_trip_ms": 9.245708,
+      "cycles": 8204
+    },
+    {
+      "case": "Explain gravity in one sentence:",
+      "token": 198,
+      "score_numerator": 1354075075872,
+      "round_trip_ms": 9.208542,
+      "cycles": 8204
+    },
+    {
+      "case": "One, two, three,",
+      "token": 198,
+      "score_numerator": 999953892618,
+      "round_trip_ms": 9.396083,
+      "cycles": 8204
+    },
+    {
+      "case": "The Eiffel Tower is located in",
+      "token": 279,
+      "score_numerator": 1488714774456,
+      "round_trip_ms": 9.502459,
+      "cycles": 8204
+    }
+  ],
+  "limitation": "Simulation wall time is not silicon or USB performance. Board mode uses manual clocks, not a 20 MHz streaming engine."
+}

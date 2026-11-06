@@ -1,0 +1,11 @@
+{
+  "source_fixture_sha256": "777aa36f5fc0c484b54bd9b93725d756eadfdd366ff1dc12cd7c425af15e69fb",
+  "wire_fixture_sha256": "d88c21eacaa9086659e350e7070f4709cd87ca4630b6a4932b0ea326dad0a99a",
+  "rtl_sha256": "6ed3d5cc2ddcb5ed9a8a2eb38cfaab8fe0215d550ef2154543a6333cddada551",
+  "firmware_sha256": "85c459c8e1b24a48afeef268a7bf33181b7173a6fbc73758be2b0c41ca52ed16",
+  "vectors": 24,
+  "input_permutation_applied": true,
+  "input_encoding": "bitplanes_msb_first_lsb_packed",
+  "client_sha256": "07e2f613392c8b237530eba39cc5e5a85ee9a031c451482a3a8aea951bf3346c",
+  "scope": "Existing Qwen vectors, reordered to wire layout when necessary. Firmware ID names this RTL. No new quality holdout or silicon identity measurement."
+}

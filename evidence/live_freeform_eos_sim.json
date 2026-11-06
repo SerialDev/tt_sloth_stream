@@ -1,0 +1,410 @@
+{
+  "passed": true,
+  "mode": "simulated board",
+  "rtl_sha256": "6ed3d5cc2ddcb5ed9a8a2eb38cfaab8fe0215d550ef2154543a6333cddada551",
+  "script_sha256": "2b34ed91baa125a6ef3c62c9eefdc3484894c87c096bab63eef2cf9a6ca13bc5",
+  "resident_coefficients_independently_verified": true,
+  "offloaded_transactions": 35,
+  "complete_chip_neuron_winners": 1,
+  "partially_offloaded_neuron_winners": 2,
+  "chip_contribution_changes_winner_count": 3,
+  "host_complement_coefficients": 2688,
+  "generations": [
+    {
+      "prompt": "Explain in one sentence why ice floats on water. Answer:",
+      "tokens": [
+        271,
+        248068,
+        271,
+        248069,
+        271,
+        8938,
+        2919,
+        33470,
+        513,
+        23883,
+        321,
+        33536,
+        25521,
+        1304,
+        1881,
+        1070,
+        11,
+        6611,
+        264,
+        83429,
+        5759,
+        421,
+        3520,
+        279,
+        14058,
+        2919,
+        37564,
+        261,
+        1056,
+        279,
+        6235,
+        9561,
+        52448,
+        13,
+        248044
+      ],
+      "continuation": "\n\n<think>\n\n</think>\n\n Because water molecules are polar and hydrogen bonds form between them, creating a cohesive structure that makes the liquid water denser than the solid ice lattice.",
+      "raw_continuation": "\n\n<think>\n\n</think>\n\n Because water molecules are polar and hydrogen bonds form between them, creating a cohesive structure that makes the liquid water denser than the solid ice lattice.<|endoftext|>",
+      "stop_reason": "eos"
+    }
+  ],
+  "calls": [
+    {
+      "shard_token": 198,
+      "global_token": 271,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 271,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1200627358506,
+      "host_round_trip_ms": 9.936167,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 248068,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 248068,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1136963230880,
+      "host_round_trip_ms": 10.036625,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 198,
+      "global_token": 271,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 271,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 2899041047736,
+      "host_round_trip_ms": 10.5635,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 248069,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 248069,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1074681335040,
+      "host_round_trip_ms": 9.69225,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 198,
+      "global_token": 271,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 271,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 2923248984738,
+      "host_round_trip_ms": 9.965167,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 8938,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 8938,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 690538836960,
+      "host_round_trip_ms": 10.077042,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 2919,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 2919,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 2868896519944,
+      "host_round_trip_ms": 9.732292,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 33470,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 33470,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1164541074424,
+      "host_round_trip_ms": 10.245125,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 513,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 513,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1208524440760,
+      "host_round_trip_ms": 9.927834,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 23883,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 23883,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1882390590288,
+      "host_round_trip_ms": 10.143917,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 321,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 321,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1465530420640,
+      "host_round_trip_ms": 9.518542,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 33536,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 33536,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 2677952858152,
+      "host_round_trip_ms": 10.042916,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 25521,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 25521,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1595198243520,
+      "host_round_trip_ms": 9.6065,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 1304,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 1304,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1974771697808,
+      "host_round_trip_ms": 9.796917,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 1881,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 1881,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 2724130551948,
+      "host_round_trip_ms": 9.911584,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 1070,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 1070,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1991789071688,
+      "host_round_trip_ms": 10.315167,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 11,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 11,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1750571466904,
+      "host_round_trip_ms": 9.543583,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 6611,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 6611,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 2186572551176,
+      "host_round_trip_ms": 10.134709,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 264,
+      "winner_path": "complete_chip_neuron",
+      "winner_without_chip_contribution": 449,
+      "chip_contribution_changes_winner": true,
+      "score_numerator": 2829045516076,
+      "host_round_trip_ms": 9.790209,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 83429,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 83429,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1539968731520,
+      "host_round_trip_ms": 9.799708,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 5759,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 5759,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1704042866400,
+      "host_round_trip_ms": 10.04425,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 421,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 421,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1726812561136,
+      "host_round_trip_ms": 9.886625,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 3520,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 3520,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 2113354209200,
+      "host_round_trip_ms": 10.070667,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 279,
+      "winner_path": "chip_slice_plus_host_complement",
+      "winner_without_chip_contribution": 2919,
+      "chip_contribution_changes_winner": true,
+      "score_numerator": 2306799570400,
+      "host_round_trip_ms": 11.356666,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 14058,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 14058,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1169336221760,
+      "host_round_trip_ms": 11.344458,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 2919,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 2919,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1573274183104,
+      "host_round_trip_ms": 10.057125,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 37564,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 37564,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1547700863200,
+      "host_round_trip_ms": 9.999167,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 261,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 261,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1716193359040,
+      "host_round_trip_ms": 9.969084,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 1056,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 1056,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1501892330640,
+      "host_round_trip_ms": 9.67675,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 279,
+      "winner_path": "chip_slice_plus_host_complement",
+      "winner_without_chip_contribution": 9561,
+      "chip_contribution_changes_winner": true,
+      "score_numerator": 2301708903000,
+      "host_round_trip_ms": 10.042834,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 264,
+      "global_token": 6235,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 6235,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1224533240112,
+      "host_round_trip_ms": 9.988084,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 220,
+      "global_token": 9561,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 9561,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1512014101600,
+      "host_round_trip_ms": 10.213625,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 52448,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 52448,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1263532738208,
+      "host_round_trip_ms": 9.628375,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 279,
+      "global_token": 13,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 13,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1751829555216,
+      "host_round_trip_ms": 9.609125,
+      "cycles": 8204
+    },
+    {
+      "shard_token": 198,
+      "global_token": 248044,
+      "winner_path": "host_nonresident_neuron",
+      "winner_without_chip_contribution": 248044,
+      "chip_contribution_changes_winner": false,
+      "score_numerator": 1984383840762,
+      "host_round_trip_ms": 9.354166,
+      "cycles": 8204
+    }
+  ],
+  "scope": "Greedy hybrid inference: resident rows use declared mixed weight precision and INT8 activations and exact local scale selection; nonresident rows use host FP32. Chip returns one complete dot product and three partial sums. Production host computation uses only the 2688 complement coefficients for the partial rows; the complete row has no host contribution. Completed sums match the original four-row integer reference. Winner provenance distinguishes complete-chip, mixed and nonresident-host rows. Chip-removal comparisons use the same hidden state, not an independently generated sequence. Not a float-model equivalence, full-head offload, sampling or acceleration claim. CPU validation overhead included in execution."
+}

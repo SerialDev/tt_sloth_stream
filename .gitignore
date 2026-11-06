@@ -1,0 +1,10 @@
+build/
+.venv/
+__pycache__/
+*.pyc
+test/sim_build/
+test/results.xml
+test/gate_level_netlist.v
+*.vcd
+*.fst
+.DS_Store
